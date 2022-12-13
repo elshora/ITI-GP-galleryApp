@@ -1,0 +1,10 @@
+.normalbtn {
+    width: 150px;
+    transition: .5s ease-in-out;
+
+    &:hover {
+        background-color: #13AFF0;
+        border-color: #13AFF0 !important;
+
+    }
+}

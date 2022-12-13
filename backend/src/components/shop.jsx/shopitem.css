@@ -1,0 +1,40 @@
+.art-item {
+  transition: 0.3s;
+}
+.art-item .artImage {
+  height: 350px;
+}
+.art-item .shop-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.art-item .shop-img:hover {
+  transform: scale(1.1);
+}
+.art-item h4.art-title,
+.art-item p.artist-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.art-item h4.art-title {
+  width: 75%;
+}
+.art-item p.artist-name {
+  width: 50%;
+}
+.width-animation {
+  animation-duration: 2s;
+  animation-name: increase-width;
+  animation-timing-function: ease-out;
+}
+@keyframes increase-width {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}

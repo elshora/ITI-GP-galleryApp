@@ -1,0 +1,56 @@
+.singleArtist {
+    background-color: #F6F6F6;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px 12px 0;
+
+    .imgContainer {
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+
+        }
+    }
+
+    .artistInfo {
+        h4 {
+            color: #444;
+        }
+
+        p {
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #555;
+            word-break: break-all;
+        }
+    }
+
+    .gallery {
+        max-height: 140px;
+        min-height: 140px;
+
+        .favImg {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .imgscontainer {
+            flex-wrap: wrap;
+
+            .imgs {
+                width: calc((100% - 15px) / 3);
+                height: calc((100% - 15px) / 2);
+                margin-right: 5px;
+                margin-bottom: 5px;
+
+
+                @media (max-width:579px) {
+                    width: calc((100% - 20px) / 4);
+
+                }
+            }
+        }
+    }
+}

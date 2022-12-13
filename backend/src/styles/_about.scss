@@ -1,0 +1,66 @@
+.line {
+  margin: auto;
+  text-align: center;
+}
+.line1 {
+  width: 80px;
+  height: 1px;
+  background-color: #ff305b;
+  text-align: center;
+  margin: 1px auto;
+}
+.line2 {
+  width: 160px;
+  height: 1px;
+  background-color: #ff305b;
+  text-align: center;
+  margin: 4px auto;
+}
+
+.line3 {
+  width: 80px;
+  height: 1px;
+  background-color: #ff305b;
+  text-align: center;
+  margin: 4px auto;
+}
+
+.member {
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.member .caption {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 195, 218, 0.9);
+  opacity: 0;
+  transition-delay: 0.5s;
+  transition-duration: 1s;
+}
+.caption .i {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.caption h2 {
+  position: absolute;
+  bottom: 20;
+  left: 0;
+}
+.caption p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.caption:hover {
+  opacity: 1;
+}
+
+.text {
+  max-width: 75%;
+}

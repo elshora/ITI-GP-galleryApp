@@ -1,0 +1,43 @@
+@import "./styles/custom";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+input,
+textarea {
+    box-shadow: none !important;
+    outline: 0 !important;
+}
+
+textarea {
+    resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 14px !important;
+    font-weight: lighter !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+
+    font-size: 0 !important;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ccc !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+form {
+    padding: 10px;
+}

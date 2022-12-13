@@ -1,0 +1,25 @@
+@import "../../styles/_variables";
+
+.container {
+
+    .link {
+        text-decoration: underline;
+        color: $link;
+
+        &:is(:hover, :visited, :active) {
+            color: $link;
+        }
+    }
+
+    .btn {
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        transition: $transition;
+
+        &:hover {
+            color: #fff;
+            background-color: #4CD4BF;
+            border-color: #4CD4BF;
+        }
+    }
+}

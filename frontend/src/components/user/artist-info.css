@@ -1,0 +1,9 @@
+.user-image-holder {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.artist-section {
+  background-color: rgba(243, 241, 241, 0.548);
+}

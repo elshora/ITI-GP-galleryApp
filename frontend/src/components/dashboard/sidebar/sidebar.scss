@@ -1,0 +1,115 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 10px;
+    border-right: 0.5px solid #72717127;
+    position: relative;
+    width: 100%;
+    background-color: #212529;
+    flex: 2;
+    height: 100%;
+
+    a {
+        text-decoration: none;
+    }
+
+    .top {
+        height: 60px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 0.5px solid #72717127;
+        margin-bottom: 10px;
+
+        .iconContainer {
+            font-size: 25px;
+            padding: 5px;
+            width: max-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 7px;
+            box-shadow: 0 0 5px #eee;
+
+
+            i {
+                color: #c69b7b;
+            }
+        }
+
+        h2 {
+            color: #c69b7b;
+            margin: 0;
+        }
+    }
+
+
+
+    .center {
+        padding: 15px;
+
+        .sidebarListContainer {
+            list-style: none;
+
+            .items {
+
+
+                .linkItem {
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    color: #c69b7b;
+                    font-size: 17px;
+                    transition: color 0.4s ease-in-out;
+                    margin-bottom: 10px;
+                    padding: 7px 10px;
+                    transition: background 0.4s ease-in-out;
+                    border-radius: 10px;
+
+                    &.active,
+                    &:hover {
+
+                        box-shadow: 0 4px 8px 0 rgba(0, 255, 234, 0.2),
+                            0 6px 20px 0 rgba(0, 255, 221, 0.651);
+                        outline: 2px solid rgba(0, 255, 221, 0.651);
+                    }
+                }
+
+            }
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        min-height: auto;
+        width: 100%;
+        max-width: 100%;
+        border-bottom: 1px solid #cccccc41;
+
+        .top {
+            display: none;
+        }
+
+        .center {
+
+
+
+            .sidebarListContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 0;
+
+                .item {
+                    margin-bottom: 0;
+                }
+
+                i {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
